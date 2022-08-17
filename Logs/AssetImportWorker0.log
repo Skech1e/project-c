@@ -4370,3 +4370,9 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1203.896274 seconds.
+  path: Assets/Prefabs/Striker.prefab
+  artifactKey: Guid(a25ae04151b584541bede5d3c2fbeeb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Striker.prefab using Guid(a25ae04151b584541bede5d3c2fbeeb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3479c80d092bc477f5fa3651206d561') in 0.571063 seconds 
