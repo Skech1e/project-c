@@ -6,16 +6,17 @@ public class PlayerController : MonoBehaviour
 {
     public Vector2 striker;
     public float m_hori, m_vert;
-    int st_count;
+    public int st_count;
     SpriteRenderer aim_spr, power_spr;
-    public Vector2 direction;
     Rigidbody2D rg_striker;
+    public float strike_power;
+
 
     // Start is called before the first frame update
     void Start()
     {
-        striker = transform.position;
-        striker.y = -8.8f;
+        striker.y = transform.position.y;
+        //striker.y = -8.8f;
         st_count = 0;
         rg_striker = GetComponent<Rigidbody2D>();
 
@@ -24,12 +25,9 @@ public class PlayerController : MonoBehaviour
     }
 
     // Update is called once per frame
-    void FixedUpdate()
-    {
-        //transform.position = striker;
-        StrikerControl();
-        Physics.gravity = Vector3.down;
-        
+    void Update()
+    {        
+        StrikerControl();        
     }
 
     void StrikerControl()
@@ -38,15 +36,15 @@ public class PlayerController : MonoBehaviour
         {
             st_count = 0;
             m_hori += Input.GetAxis("Mouse X");
-            //striker.x = Mathf.Clamp(m_hori, -7.5f, 7.5f);
+            striker.x = Mathf.Clamp(m_hori, -7.5f, 7.5f);
             aim_spr.enabled = false;
+            transform.position = striker;
         }
         if (st_count == 1)
         {
             m_hori += Input.GetAxis("Mouse X");
             aim_spr.enabled = true;
             rg_striker.transform.rotation = Quaternion.Euler(0, 0, -m_hori);
-            direction.y = rg_striker.transform.rotation.eulerAngles.z;
             power_spr.enabled = false;
         }
         if (st_count == 2)
@@ -54,15 +52,16 @@ public class PlayerController : MonoBehaviour
             aim_spr.enabled = false;
             if (Input.GetMouseButton(0))
             {
-                m_vert += Input.GetAxis("Mouse Y");
+                m_vert += Input.GetAxis("Mouse Y")*5f;
                 power_spr.enabled = true;
-
+                power_spr.material.SetFloat("_Arc2", Mathf.Clamp(-m_vert, 1, 359));
+                strike_power = power_spr.material.GetFloat("_Arc2");
+                print(power_spr.material.GetFloat("_Arc2"));
             }
             if (Input.GetMouseButtonUp(0))
             {
                 power_spr.enabled = false;
-                //rg_striker.AddForce(direction, ForceMode2D.Impulse);
-                rg_striker.AddRelativeForce(direction, ForceMode2D.Impulse);
+                rg_striker.AddRelativeForce(Vector2.up * strike_power * 0.1f, ForceMode2D.Impulse);
             }
         }
         if (st_count == 3)
@@ -83,5 +82,6 @@ public class PlayerController : MonoBehaviour
         {
             m_vert += Input.GetAxis("Mouse Y");
         }
+
     }
 }
