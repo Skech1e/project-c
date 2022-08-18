@@ -30,6 +30,13 @@ public class PlayerController : MonoBehaviour
         StrikerControl();        
     }
 
+    float RangeConvert(float value)
+    {
+        float newVal;
+        newVal = ((value - 360) * 200) / -360;
+        return newVal;
+    }
+
     void StrikerControl()
     {
         if (st_count <= 0)
@@ -52,16 +59,15 @@ public class PlayerController : MonoBehaviour
             aim_spr.enabled = false;
             if (Input.GetMouseButton(0))
             {
-                m_vert += Input.GetAxis("Mouse Y")*5f;
+                m_vert += Input.GetAxis("Mouse Y");
                 power_spr.enabled = true;
-                power_spr.material.SetFloat("_Arc2", Mathf.Clamp(-m_vert, 1, 359));
-                strike_power = power_spr.material.GetFloat("_Arc2");
-                print(power_spr.material.GetFloat("_Arc2"));
+                power_spr.material.SetFloat("_Arc2", -m_vert);
+                strike_power = RangeConvert(Mathf.Clamp(power_spr.material.GetFloat("_Arc2"), 0f, 360f));
             }
             if (Input.GetMouseButtonUp(0))
             {
                 power_spr.enabled = false;
-                rg_striker.AddRelativeForce(Vector2.up * strike_power * 0.1f, ForceMode2D.Impulse);
+                rg_striker.AddRelativeForce(Vector2.up * strike_power, ForceMode2D.Impulse);
             }
         }
         if (st_count == 3)

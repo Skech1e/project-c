@@ -347,6 +347,7 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 "Assets/Scripts/InitGame.cs"
 "Assets/Scripts/PlayerController.cs"
+"Assets/Scripts/Testing.cs"
 -langversion:9.0
 
 /deterministic
