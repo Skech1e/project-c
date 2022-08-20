@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour
     public float m_hori, m_vert;
     public int st_count;
     SpriteRenderer aim_spr, power_spr;
+    SpriteMask msk_pwr;
     Rigidbody2D rg_striker;
     public float strike_power;
 
@@ -22,6 +23,7 @@ public class PlayerController : MonoBehaviour
 
         aim_spr = transform.GetChild(0).GetComponent<SpriteRenderer>();
         power_spr = transform.GetChild(1).GetComponent<SpriteRenderer>();
+        msk_pwr = power_spr.GetComponentInChildren<SpriteMask>();
     }
 
     // Update is called once per frame
@@ -45,6 +47,7 @@ public class PlayerController : MonoBehaviour
             m_hori += Input.GetAxis("Mouse X");
             striker.x = Mathf.Clamp(m_hori, -7.5f, 7.5f);
             aim_spr.enabled = false;
+            power_spr.enabled = false;
             transform.position = striker;
         }
         if (st_count == 1)
@@ -59,10 +62,16 @@ public class PlayerController : MonoBehaviour
             aim_spr.enabled = false;
             if (Input.GetMouseButton(0))
             {
-                m_vert += Input.GetAxis("Mouse Y");
                 power_spr.enabled = true;
-                power_spr.material.SetFloat("_Arc2", -m_vert);
-                strike_power = RangeConvert(Mathf.Clamp(power_spr.material.GetFloat("_Arc2"), 0f, 360f));
+                m_vert += Input.GetAxis("Mouse Y");
+                Vector3 maskTransform;
+                //power_spr.material.SetFloat("_Arc2", -m_vert);
+                //strike_power = RangeConvert(Mathf.Clamp(power_spr.material.GetFloat("_Arc2"), 0f, 360f));
+                maskTransform = Vector2.zero;
+                maskTransform.y = Mathf.Clamp(m_vert, -2.5f, 0f);
+                msk_pwr.transform.localPosition = maskTransform;
+
+                
             }
             if (Input.GetMouseButtonUp(0))
             {
