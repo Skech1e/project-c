@@ -4,14 +4,17 @@ using UnityEngine;
 
 public class InitGame : MonoBehaviour
 {
-    [SerializeField]Grid grid;
+    [SerializeField] Grid grid;
     public Vector2Int centre;
     public Vector3 pos;
-    public Transform Queen, Light, Dark, Striker, p1_pos;
-    bool flip;
+    public Transform Queen, Light, Dark, Striker;
+    public List<Transform> players = new(4);
+    bool init;
 
     [SerializeField] List<Vector2Int> light = new();
     [SerializeField] List<Vector2Int> dark = new();
+
+    GameManager manager;
 
     // Start is called before the first frame update
     void Start()
@@ -21,7 +24,7 @@ public class InitGame : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        
+
     }
 
     void CentreGrid()
@@ -53,13 +56,16 @@ public class InitGame : MonoBehaviour
 
     public void Init()
     {
-        for (int i = 0; i <= 8; i++)
+        if (init == false)
         {
-            Instantiate(Light, grid.CellToWorld((Vector3Int)light[i]), Quaternion.identity);
-            Instantiate(Dark, grid.CellToWorld((Vector3Int)dark[i]), Quaternion.identity);
-        }
-        Instantiate(Queen, grid.CellToWorld((Vector3Int)centre), Quaternion.identity);
+            for (int i = 0; i <= 8; i++)
+            {
+                Instantiate(Light, grid.CellToWorld((Vector3Int)light[i]), Quaternion.identity);
+                Instantiate(Dark, grid.CellToWorld((Vector3Int)dark[i]), Quaternion.identity);
+            }
+            Instantiate(Queen, grid.CellToWorld((Vector3Int)centre), Quaternion.identity);
 
-        Instantiate(Striker, p1_pos.position, Quaternion.identity);
+            Instantiate(Striker, players[0].position, Quaternion.identity);
+        }
     }
 }

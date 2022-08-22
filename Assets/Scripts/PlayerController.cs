@@ -12,6 +12,7 @@ public class PlayerController : MonoBehaviour
     Rigidbody2D rg_striker;
     public float strike_power;
 
+    [SerializeField] InitGame ig;
 
     // Start is called before the first frame update
     void Start()
@@ -24,6 +25,8 @@ public class PlayerController : MonoBehaviour
         aim_spr = transform.GetChild(0).GetComponent<SpriteRenderer>();
         power_spr = transform.GetChild(1).GetComponent<SpriteRenderer>();
         msk_pwr = power_spr.GetComponentInChildren<SpriteMask>();
+
+        ig = GameObject.FindWithTag("board").GetComponent<InitGame>();
     }
 
     // Update is called once per frame
@@ -37,6 +40,13 @@ public class PlayerController : MonoBehaviour
         float newVal;
         newVal = (((value - (-2.6f)) * 200) / 2.6f) + 1;
         return newVal;
+    }
+
+    void ResetStrikerPos()
+    {
+        transform.position = ig.players[0].position;
+        transform.rotation = Quaternion.identity;
+        st_count = 0;
     }
 
     void StrikerControl()
@@ -77,13 +87,10 @@ public class PlayerController : MonoBehaviour
             {
                 power_spr.enabled = false;
                 rg_striker.AddRelativeForce(Vector2.up * strike_power, ForceMode2D.Impulse);
+                Invoke("ResetStrikerPos", 3f);                
             }
         }
-        if (st_count == 3)
-        {
-            power_spr.enabled = false;
-            st_count = 0;
-        }
+
         if (Input.GetMouseButtonDown(0))
         {
             st_count++;
