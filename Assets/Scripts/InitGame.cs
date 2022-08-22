@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class InitGame : MonoBehaviour
 {
-    Grid grid;
+    [SerializeField]Grid grid;
     public Vector2Int centre;
     public Vector3 pos;
-    public Transform Queen, Light, Dark, Striker, StrikerSpawn;
+    public Transform Queen, Light, Dark, Striker, p1_pos;
     bool flip;
 
     [SerializeField] List<Vector2Int> light = new();
@@ -26,8 +26,9 @@ public class InitGame : MonoBehaviour
 
     void CentreGrid()
     {
-        grid = GetComponent<Grid>();
+        grid = transform.GetChild(0).GetComponent<Grid>();
         centre = new Vector2Int(0, 0);
+        grid.transform.rotation = Quaternion.Euler(new Vector3(0, 0, -15f));
 
         dark.Add(new Vector2Int(-2, -1));
         dark.Add(new Vector2Int(-2, 1));
@@ -59,6 +60,6 @@ public class InitGame : MonoBehaviour
         }
         Instantiate(Queen, grid.CellToWorld((Vector3Int)centre), Quaternion.identity);
 
-        Instantiate(Striker, StrikerSpawn.position, Quaternion.identity);
+        Instantiate(Striker, p1_pos.position, Quaternion.identity);
     }
 }
