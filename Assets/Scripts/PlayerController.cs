@@ -17,7 +17,7 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        striker.y = transform.position.y;
+        striker.y = transform.localPosition.y;
         //striker.y = -8.8f;
         st_count = 0;
         rg_striker = GetComponent<Rigidbody2D>();
@@ -58,7 +58,7 @@ public class PlayerController : MonoBehaviour
             striker.x = Mathf.Clamp(m_hori, -7.5f, 7.5f);
             aim_spr.enabled = false;
             power_spr.enabled = false;
-            transform.position = striker;
+            transform.localPosition = striker;
         }
         if (st_count == 1)
         {

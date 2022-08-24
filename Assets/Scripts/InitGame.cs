@@ -16,10 +16,13 @@ public class InitGame : MonoBehaviour
 
     GameManager manager;
 
+
+
     // Start is called before the first frame update
     void Start()
     {
         CentreGrid();
+        Cursor
     }
     // Update is called once per frame
     void FixedUpdate()
