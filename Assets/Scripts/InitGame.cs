@@ -22,7 +22,7 @@ public class InitGame : MonoBehaviour
     void Start()
     {
         CentreGrid();
-        Cursor
+        Cursor.lockState = CursorLockMode.Confined;
     }
     // Update is called once per frame
     void FixedUpdate()

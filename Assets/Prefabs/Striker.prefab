@@ -120,7 +120,7 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 2
-  m_AngularDrag: 0.05
+  m_AngularDrag: 5
   m_GravityScale: 0
   m_Material: {fileID: 6200000, guid: ec7c24fc58e434a44acd6fe86c143223, type: 2}
   m_Interpolate: 0
@@ -144,6 +144,7 @@ MonoBehaviour:
   m_vert: 0
   st_count: 0
   strike_power: 0
+  ig: {fileID: 0}
 --- !u!1 &3004359860461306808
 GameObject:
   m_ObjectHideFlags: 0
