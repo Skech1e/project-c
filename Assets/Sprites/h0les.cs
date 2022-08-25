@@ -4,23 +4,22 @@ using UnityEngine;
 
 public class h0les : MonoBehaviour
 {
-    
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+  // Start is called before the first frame update
+  void Start()
+  {
 
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        
-        print(collision.collider.gameObject.name);
-    }
+  }
+
+  // Update is called once per frame
+  void Update()
+  {
+
+  }
+
+  private void OnTriggerEnter2D(Collider2D collision)
+  {
+    print("ok");
+  }
 }

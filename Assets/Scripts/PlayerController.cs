@@ -36,7 +36,7 @@ public class PlayerController : MonoBehaviour
     float RangeConvert(float value)
     {
         float newVal;
-        newVal = (((value - (-1f)) * 200) / 2.6f) + 1;
+        newVal = (((value - (-1f)) * 200) / 1f) + 1;
         return newVal;
     }
 
