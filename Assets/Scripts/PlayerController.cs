@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -38,7 +36,7 @@ public class PlayerController : MonoBehaviour
     float RangeConvert(float value)
     {
         float newVal;
-        newVal = (((value - (-2.6f)) * 200) / 2.6f) + 1;
+        newVal = (((value - (-1f)) * 200) / 2.6f) + 1;
         return newVal;
     }
 
@@ -78,7 +76,7 @@ public class PlayerController : MonoBehaviour
                 //power_spr.material.SetFloat("_Arc2", -m_vert);
                 //strike_power = RangeConvert(Mathf.Clamp(power_spr.material.GetFloat("_Arc2"), 0f, 360f));
                 maskTransform = Vector2.zero;
-                maskTransform.y = Mathf.Clamp(m_vert * 0.1f, -2.6f, 0f);
+                maskTransform.y = Mathf.Clamp(m_vert * 0.1f, -1f, 0f);
                 msk_pwr.transform.localPosition = maskTransform;
                 strike_power = RangeConvert(maskTransform.y);
                 

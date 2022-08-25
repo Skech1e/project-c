@@ -15,7 +15,7 @@ E:/Unity Projects/project-c
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-52441
+50878
 Successfully changed project path to: E:/Unity Projects/project-c
 E:/Unity Projects/project-c
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,7 +47,7 @@ E:/Unity Projects/project-c
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 74.03 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 72.02 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.7f1 (24e8595d6d43)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.7f1/Editor/Data/Resources/UnitySubsystems
@@ -63,48 +63,48 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.7f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.7f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.7f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56532
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56960
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.7f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.006966 seconds.
+Registered in 0.222479 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Refreshing native plugins compatible for Editor in 72.78 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 73.21 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.561 seconds
+- Completed reload, in  4.110 seconds
 Domain Reload Profiling:
-	ReloadAssembly (562ms)
-		BeginReloadAssembly (68ms)
+	ReloadAssembly (4110ms)
+		BeginReloadAssembly (2749ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (398ms)
-			LoadAssemblies (66ms)
+		EndReloadAssembly (873ms)
+			LoadAssemblies (2751ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (92ms)
+			SetupTypeCache (559ms)
 			ReleaseScriptCaches (0ms)
 			RebuildScriptCaches (22ms)
-			SetupLoadedEditorAssemblies (240ms)
+			SetupLoadedEditorAssemblies (246ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (46ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (73ms)
 				BeforeProcessingInitializeOnLoad (3ms)
-				ProcessInitializeOnLoadAttributes (80ms)
-				ProcessInitializeOnLoadMethodAttributes (37ms)
+				ProcessInitializeOnLoadAttributes (82ms)
+				ProcessInitializeOnLoadMethodAttributes (42ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.127218 seconds.
-Android Extension - Scanning For ADB Devices 4640 ms
+Registered in 0.003258 seconds.
+Android Extension - Scanning For ADB Devices 4749 ms
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image E:\Unity Projects\project-c\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image E:\Unity Projects\project-c\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
@@ -113,43 +113,43 @@ Native extension for Android target not found
 Refreshing native plugins compatible for Editor in 0.57 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.476 seconds
+- Completed reload, in  3.859 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1477ms)
-		BeginReloadAssembly (95ms)
+	ReloadAssembly (3860ms)
+		BeginReloadAssembly (100ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (5ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (17ms)
-		EndReloadAssembly (1242ms)
-			LoadAssemblies (656ms)
+			CreateAndSetChildDomain (19ms)
+		EndReloadAssembly (3627ms)
+			LoadAssemblies (1874ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (197ms)
+			SetupTypeCache (622ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (58ms)
-			SetupLoadedEditorAssemblies (303ms)
+			RebuildScriptCaches (42ms)
+			SetupLoadedEditorAssemblies (1060ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (12ms)
+				InitializePlatformSupportModulesInManaged (11ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (73ms)
-				ProcessInitializeOnLoadAttributes (187ms)
-				ProcessInitializeOnLoadMethodAttributes (24ms)
-				AfterProcessingInitializeOnLoad (6ms)
+				BeforeProcessingInitializeOnLoad (71ms)
+				ProcessInitializeOnLoadAttributes (254ms)
+				ProcessInitializeOnLoadMethodAttributes (717ms)
+				AfterProcessingInitializeOnLoad (5ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (4ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Refreshing native plugins compatible for Editor in 0.58 ms, found 3 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
+Refreshing native plugins compatible for Editor in 0.57 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3274 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 23 unused Assets / (30.2 KB). Loaded Objects now: 3738.
 Memory consumption went from 114.7 MB to 114.7 MB.
-Total: 3.066300 ms (FindLiveObjects: 0.310200 ms CreateObjectMapping: 0.096300 ms MarkObjects: 2.634400 ms  DeleteObjects: 0.024300 ms)
+Total: 3.335600 ms (FindLiveObjects: 0.366000 ms CreateObjectMapping: 0.094900 ms MarkObjects: 2.843500 ms  DeleteObjects: 0.030200 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -163,31 +163,403 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 2437.739305 seconds.
-  path: Assets/Prefabs/Striker.prefab
-  artifactKey: Guid(a25ae04151b584541bede5d3c2fbeeb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Striker.prefab using Guid(a25ae04151b584541bede5d3c2fbeeb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b29b89ac3b026e49e1d17ccea55ea6e5') in 2.192268 seconds 
+  Time since last request: 90828.287768 seconds.
+  path: Assets/Sprites/neon_blue.png
+  artifactKey: Guid(6e44a212a1fb9f64696913b0dfc881d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/neon_blue.png using Guid(6e44a212a1fb9f64696913b0dfc881d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e291f5a16417552b7dc2063299dbfffa') in 0.113140 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.749268 seconds.
-  path: Assets/Prefabs/Dark.prefab
+  Time since last request: 0.000017 seconds.
+  path: Assets/Sprites/neon-orange.png
+  artifactKey: Guid(a30dadaa966f3284e99d60f16cc59ec7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/neon-orange.png using Guid(a30dadaa966f3284e99d60f16cc59ec7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f07f791b453b0f092e45f39d2fb9c923') in 0.026217 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Prefabs/Orange.prefab
   artifactKey: Guid(cf6f4aa48f8a153449001f92db834021) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Dark.prefab using Guid(cf6f4aa48f8a153449001f92db834021) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03c845b8810f9929e2667ce8d9856097') in 0.039967 seconds 
+Start importing Assets/Prefabs/Orange.prefab using Guid(cf6f4aa48f8a153449001f92db834021) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41ab584c543cd637d0d1ba3fff121418') in 0.043038 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Prefabs/Striker.prefab
-  artifactKey: Guid(a25ae04151b584541bede5d3c2fbeeb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Striker.prefab using Guid(a25ae04151b584541bede5d3c2fbeeb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a9c8d1f190d613219bbdc162a5c4fc2') in 0.027197 seconds 
+  Time since last request: 88.095083 seconds.
+  path: Assets/Sprites/neon_blue.png
+  artifactKey: Guid(6e44a212a1fb9f64696913b0dfc881d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/neon_blue.png using Guid(6e44a212a1fb9f64696913b0dfc881d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1db145d58d5932a3a5b20faf52d926d') in 0.036278 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000023 seconds.
+  Time since last request: 9.513481 seconds.
+  path: Assets/Sprites/neon_blue.png
+  artifactKey: Guid(6e44a212a1fb9f64696913b0dfc881d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/neon_blue.png using Guid(6e44a212a1fb9f64696913b0dfc881d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca74daaa3ecfd3abadc8f819a7121078') in 0.019049 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4855.688286 seconds.
+  path: Assets/Sprites/neon-orange.png
+  artifactKey: Guid(a30dadaa966f3284e99d60f16cc59ec7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/neon-orange.png using Guid(a30dadaa966f3284e99d60f16cc59ec7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cea439b6b1e20aa92ba95f300f87b67b') in 0.041463 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 340.731422 seconds.
+  path: Assets/Sprites/neon-orange.png
+  artifactKey: Guid(a30dadaa966f3284e99d60f16cc59ec7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/neon-orange.png using Guid(a30dadaa966f3284e99d60f16cc59ec7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e6253ceee7dc6aff5f50a25d42571d8') in 0.024725 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 157.035413 seconds.
+  path: Assets/Sprites/neon-orange.png
+  artifactKey: Guid(a30dadaa966f3284e99d60f16cc59ec7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/neon-orange.png using Guid(a30dadaa966f3284e99d60f16cc59ec7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd548f176fc314c573aa6a3354c1876f2') in 0.031656 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 68.003341 seconds.
+  path: Assets/Sprites/neon-orange.png
+  artifactKey: Guid(a30dadaa966f3284e99d60f16cc59ec7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/neon-orange.png using Guid(a30dadaa966f3284e99d60f16cc59ec7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a6be6ce0aa3045ec6547a85ceddbf02') in 0.022441 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 70.694361 seconds.
+  path: Assets/Sprites/neon-orange.png
+  artifactKey: Guid(a30dadaa966f3284e99d60f16cc59ec7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/neon-orange.png using Guid(a30dadaa966f3284e99d60f16cc59ec7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64821e0524478226537116428d5e2ce4') in 0.023156 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 122.066919 seconds.
+  path: Assets/Sprites/neon_blue.png
+  artifactKey: Guid(6e44a212a1fb9f64696913b0dfc881d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/neon_blue.png using Guid(6e44a212a1fb9f64696913b0dfc881d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eace31b2824c49c67a0e1651b0fa7759') in 0.031110 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 343.513258 seconds.
+  path: Assets/Sprites/neon_blue.png
+  artifactKey: Guid(6e44a212a1fb9f64696913b0dfc881d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/neon_blue.png using Guid(6e44a212a1fb9f64696913b0dfc881d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72d421d5059fd38f5e6deddc9dd05a69') in 0.028344 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 22.280891 seconds.
+  path: Assets/Sprites/neon-orange.png
+  artifactKey: Guid(a30dadaa966f3284e99d60f16cc59ec7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/neon-orange.png using Guid(a30dadaa966f3284e99d60f16cc59ec7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d945bc06fdbfef799721e57d2232660') in 0.028184 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 29.781222 seconds.
+  path: Assets/Sprites/neon-orange.png
+  artifactKey: Guid(a30dadaa966f3284e99d60f16cc59ec7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/neon-orange.png using Guid(a30dadaa966f3284e99d60f16cc59ec7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3853ae1da3921ffe230c6bcf1a7b360') in 0.029864 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 75.933380 seconds.
+  path: Assets/Sprites/neon_blue.png
+  artifactKey: Guid(6e44a212a1fb9f64696913b0dfc881d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/neon_blue.png using Guid(6e44a212a1fb9f64696913b0dfc881d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed8a6718961d3e4f89bad880cf77f95c') in 0.028435 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 248.986842 seconds.
+  path: Assets/Prefabs/Blue.prefab
+  artifactKey: Guid(47b6e7b0e8b15d2458c972f7b97ce0c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Blue.prefab using Guid(47b6e7b0e8b15d2458c972f7b97ce0c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68d1fc08e78dd1dbcc5a6d38f9e5aa84') in 0.043999 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.007348 seconds.
+  path: Assets/Prefabs/Orange.prefab
+  artifactKey: Guid(cf6f4aa48f8a153449001f92db834021) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Orange.prefab using Guid(cf6f4aa48f8a153449001f92db834021) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6742961d905681b3aa8f2225ab9797d') in 0.015034 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 32.284449 seconds.
   path: Assets/Prefabs/Queen.prefab
   artifactKey: Guid(860b65283763bb34985897c6cba49328) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Queen.prefab using Guid(860b65283763bb34985897c6cba49328) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93f909afca5e9c82c2180bf10c0ff044') in 0.074514 seconds 
+Start importing Assets/Prefabs/Queen.prefab using Guid(860b65283763bb34985897c6cba49328) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d0f8d4b23e2541a86f615d205a1dc5e') in 0.014928 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 17776.458762 seconds.
+  Time since last request: 28.375194 seconds.
+  path: Assets/Sprites/neon_queen.png
+  artifactKey: Guid(88f890f983d948a409e43152556a4be4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/neon_queen.png using Guid(88f890f983d948a409e43152556a4be4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0569e93cc0d321bc10e1d487fdd22b0') in 0.034032 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1437.643054 seconds.
+  path: Assets/Sprites/neon_queen.png
+  artifactKey: Guid(88f890f983d948a409e43152556a4be4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/neon_queen.png using Guid(88f890f983d948a409e43152556a4be4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1ef26a332fdb7987cbd7c8ceaa3fb12') in 0.034224 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 46.331588 seconds.
+  path: Assets/Sprites/neon_queen.png
+  artifactKey: Guid(88f890f983d948a409e43152556a4be4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/neon_queen.png using Guid(88f890f983d948a409e43152556a4be4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ea0b4b9b953ecd005b3e60f1f706b56') in 0.035267 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 108.932385 seconds.
+  path: Assets/Prefabs/Queen.prefab
+  artifactKey: Guid(860b65283763bb34985897c6cba49328) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Queen.prefab using Guid(860b65283763bb34985897c6cba49328) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c4296360525a208f35d1f7e38c12855') in 0.009624 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 390.277889 seconds.
+  path: Assets/Prefabs/Blue.prefab
+  artifactKey: Guid(47b6e7b0e8b15d2458c972f7b97ce0c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Blue.prefab using Guid(47b6e7b0e8b15d2458c972f7b97ce0c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f20c229476e71e4329db9de6b58cd05c') in 0.041774 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 140.359491 seconds.
+  path: Assets/Prefabs/Orange.prefab
+  artifactKey: Guid(cf6f4aa48f8a153449001f92db834021) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Orange.prefab using Guid(cf6f4aa48f8a153449001f92db834021) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68b83938b08bc7a52aa5b9f42f7410f8') in 0.036630 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 988.850675 seconds.
+  path: Assets/Sprites/neon_striker.png
+  artifactKey: Guid(5c4a499ed0180dd4db48a64c28f17032) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/neon_striker.png using Guid(5c4a499ed0180dd4db48a64c28f17032) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c514b3296e207861136a540347a645a') in 0.067289 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.201408 seconds.
+  path: Assets/Sprites/neon_blue.png
+  artifactKey: Guid(6e44a212a1fb9f64696913b0dfc881d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/neon_blue.png using Guid(6e44a212a1fb9f64696913b0dfc881d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'efebe904562268d731e78c11fb7c818f') in 0.076213 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.359479 seconds.
+  path: Assets/Prefabs/Striker.prefab
+  artifactKey: Guid(a25ae04151b584541bede5d3c2fbeeb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Striker.prefab using Guid(a25ae04151b584541bede5d3c2fbeeb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '553c2865aaf4a9b06bcf1430a5f515d9') in 0.287361 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 16.305288 seconds.
+  path: Assets/Sprites/neon-orange.png
+  artifactKey: Guid(a30dadaa966f3284e99d60f16cc59ec7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/neon-orange.png using Guid(a30dadaa966f3284e99d60f16cc59ec7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '174b10e50d45f93c924b431d98687f5b') in 0.048562 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.297043 seconds.
+  path: Assets/Sprites/neon_striker.png
+  artifactKey: Guid(5c4a499ed0180dd4db48a64c28f17032) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/neon_striker.png using Guid(5c4a499ed0180dd4db48a64c28f17032) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa3a2d9f1a8d77b93c19d0f98c341a76') in 0.030330 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.446082 seconds.
+  path: Assets/Sprites/neon_striker.png
+  artifactKey: Guid(5c4a499ed0180dd4db48a64c28f17032) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/neon_striker.png using Guid(5c4a499ed0180dd4db48a64c28f17032) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '455f0749a2e76c9a73ddb925f67dbb75') in 0.027808 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 20.753034 seconds.
+  path: Assets/Sprites/neon_striker.png
+  artifactKey: Guid(5c4a499ed0180dd4db48a64c28f17032) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/neon_striker.png using Guid(5c4a499ed0180dd4db48a64c28f17032) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35e14a90330ecb3173237ddb57168156') in 0.027753 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.557085 seconds.
+  path: Assets/Sprites/neon_striker.png
+  artifactKey: Guid(5c4a499ed0180dd4db48a64c28f17032) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/neon_striker.png using Guid(5c4a499ed0180dd4db48a64c28f17032) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '913d12e65168c8742e20fce0bae96471') in 0.026682 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 884.967786 seconds.
+  path: Assets/Sprites/neon-pwr_bar.png
+  artifactKey: Guid(1ccaecf733c0807459973dacc078163e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/neon-pwr_bar.png using Guid(1ccaecf733c0807459973dacc078163e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe5e1713857f0fc6a73ba30348c24cb4') in 0.091963 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 115.953794 seconds.
+  path: Assets/Sprites/neon-pwr_bar.png
+  artifactKey: Guid(1ccaecf733c0807459973dacc078163e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/neon-pwr_bar.png using Guid(1ccaecf733c0807459973dacc078163e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec055211fea8e59896488533efd7c927') in 0.009223 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.912986 seconds.
+  path: Assets/Sprites/neon-pwr_bar.png
+  artifactKey: Guid(1ccaecf733c0807459973dacc078163e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/neon-pwr_bar.png using Guid(1ccaecf733c0807459973dacc078163e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a547d2e369392e43ab324fca3e97e4c') in 0.013511 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 230.435526 seconds.
+  path: Assets/Prefabs/Queen.prefab
+  artifactKey: Guid(860b65283763bb34985897c6cba49328) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Queen.prefab using Guid(860b65283763bb34985897c6cba49328) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad3dfdad633b625d9fcac403fcb1459c') in 0.080496 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.142235 seconds.
+  path: Assets/Prefabs/Striker.prefab
+  artifactKey: Guid(a25ae04151b584541bede5d3c2fbeeb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Striker.prefab using Guid(a25ae04151b584541bede5d3c2fbeeb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b410946a925b4ee5dc67684168f52e59') in 0.045731 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.630256 seconds.
+  path: Assets/Prefabs/Striker.prefab
+  artifactKey: Guid(a25ae04151b584541bede5d3c2fbeeb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Striker.prefab using Guid(a25ae04151b584541bede5d3c2fbeeb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f53133d250f8ed4b70e7b6e109a85a42') in 0.027053 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.779994 seconds.
+  path: Assets/Prefabs/Striker.prefab
+  artifactKey: Guid(a25ae04151b584541bede5d3c2fbeeb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Striker.prefab using Guid(a25ae04151b584541bede5d3c2fbeeb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '742cfcdd4afa07bac677b7616fcba793') in 0.057342 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 12.201649 seconds.
+  path: Assets/Prefabs/Striker.prefab
+  artifactKey: Guid(a25ae04151b584541bede5d3c2fbeeb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Striker.prefab using Guid(a25ae04151b584541bede5d3c2fbeeb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a85219aba26b81c915e908eba6cd547') in 0.032040 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.762687 seconds.
+  path: Assets/Prefabs/Striker.prefab
+  artifactKey: Guid(a25ae04151b584541bede5d3c2fbeeb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Striker.prefab using Guid(a25ae04151b584541bede5d3c2fbeeb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f4b0a7ed70c373e1ea320aa3c00b5a7') in 0.018720 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.609191 seconds.
+  path: Assets/Prefabs/Striker.prefab
+  artifactKey: Guid(a25ae04151b584541bede5d3c2fbeeb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Striker.prefab using Guid(a25ae04151b584541bede5d3c2fbeeb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d36b44b90b54562648f6ea5ae9ef6f8') in 0.123600 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.932803 seconds.
+  path: Assets/Prefabs/Striker.prefab
+  artifactKey: Guid(a25ae04151b584541bede5d3c2fbeeb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Striker.prefab using Guid(a25ae04151b584541bede5d3c2fbeeb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e46dd8545ba50d2b105ea220f910d2e3') in 0.022385 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.191001 seconds.
+  path: Assets/Prefabs/Striker.prefab
+  artifactKey: Guid(a25ae04151b584541bede5d3c2fbeeb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Striker.prefab using Guid(a25ae04151b584541bede5d3c2fbeeb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e719c97c531a81315adce8b21684851') in 0.013130 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.165957 seconds.
+  path: Assets/Prefabs/Striker.prefab
+  artifactKey: Guid(a25ae04151b584541bede5d3c2fbeeb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Striker.prefab using Guid(a25ae04151b584541bede5d3c2fbeeb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d87bdbe05f3f1ddc14d0bee1340d9a4') in 0.051376 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.519758 seconds.
+  path: Assets/Prefabs/Striker.prefab
+  artifactKey: Guid(a25ae04151b584541bede5d3c2fbeeb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Striker.prefab using Guid(a25ae04151b584541bede5d3c2fbeeb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5eca46e5bb83d6ae09845191d38b5e1') in 0.076284 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.357857 seconds.
+  path: Assets/Prefabs/Striker.prefab
+  artifactKey: Guid(a25ae04151b584541bede5d3c2fbeeb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Striker.prefab using Guid(a25ae04151b584541bede5d3c2fbeeb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dde787da051d7621db084aaf93a579c4') in 0.022885 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.612112 seconds.
+  path: Assets/Prefabs/Striker.prefab
+  artifactKey: Guid(a25ae04151b584541bede5d3c2fbeeb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Striker.prefab using Guid(a25ae04151b584541bede5d3c2fbeeb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94146e3c90638242f6dc9773d6e47c19') in 0.038066 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.294024 seconds.
+  path: Assets/Prefabs/Striker.prefab
+  artifactKey: Guid(a25ae04151b584541bede5d3c2fbeeb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Striker.prefab using Guid(a25ae04151b584541bede5d3c2fbeeb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9af065cd4771dc914f479a06577a12fa') in 0.056102 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.557355 seconds.
+  path: Assets/Prefabs/Striker.prefab
+  artifactKey: Guid(a25ae04151b584541bede5d3c2fbeeb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Striker.prefab using Guid(a25ae04151b584541bede5d3c2fbeeb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4bcb7d46f774efe5917aae011e240a3') in 0.013744 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.731430 seconds.
+  path: Assets/Prefabs/Striker.prefab
+  artifactKey: Guid(a25ae04151b584541bede5d3c2fbeeb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Striker.prefab using Guid(a25ae04151b584541bede5d3c2fbeeb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d7bd2d1fb7388c9188da18351142384') in 0.043036 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.054908 seconds.
+  path: Assets/Prefabs/Striker.prefab
+  artifactKey: Guid(a25ae04151b584541bede5d3c2fbeeb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Striker.prefab using Guid(a25ae04151b584541bede5d3c2fbeeb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f330c2fd20f10706526eb4206080f178') in 0.035157 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.390715 seconds.
+  path: Assets/Prefabs/Striker.prefab
+  artifactKey: Guid(a25ae04151b584541bede5d3c2fbeeb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Striker.prefab using Guid(a25ae04151b584541bede5d3c2fbeeb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4417082de69ae913d7617140af7c5b03') in 0.016763 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1200.278777 seconds.
+  path: Assets/Prefabs/Striker.prefab
+  artifactKey: Guid(a25ae04151b584541bede5d3c2fbeeb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Striker.prefab using Guid(a25ae04151b584541bede5d3c2fbeeb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b43d05db40358ebe09cfebe6d223f570') in 0.237822 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 49.459764 seconds.
+  path: Assets/Sprites/neon-pwr_bar.png
+  artifactKey: Guid(1ccaecf733c0807459973dacc078163e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/neon-pwr_bar.png using Guid(1ccaecf733c0807459973dacc078163e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1f42fc360129e289e7ebd07d8c1b2a5') in 0.094805 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.532486 seconds.
+  path: Assets/Sprites/neon-pwr_bar.png
+  artifactKey: Guid(1ccaecf733c0807459973dacc078163e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/neon-pwr_bar.png using Guid(1ccaecf733c0807459973dacc078163e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5fdf16a23871235c3d0b114d74c58f9b') in 0.055735 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.538922 seconds.
+  path: Assets/Sprites/neon-pwr_bar.png
+  artifactKey: Guid(1ccaecf733c0807459973dacc078163e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/neon-pwr_bar.png using Guid(1ccaecf733c0807459973dacc078163e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa51537b543492108cca63c94cb0b36c') in 0.028296 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.191647 seconds.
+  path: Assets/Sprites/neon-pwr_bar.png
+  artifactKey: Guid(1ccaecf733c0807459973dacc078163e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/neon-pwr_bar.png using Guid(1ccaecf733c0807459973dacc078163e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1f200d612855d77aa27e36e99694c76') in 0.023534 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.122045 seconds.
+  path: Assets/Sprites/neon-pwr_bar.png
+  artifactKey: Guid(1ccaecf733c0807459973dacc078163e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/neon-pwr_bar.png using Guid(1ccaecf733c0807459973dacc078163e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '089fb9de541bb1c2d5cbe3e8e59fcff4') in 0.024288 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 37.182811 seconds.
+  path: Assets/Sprites/neon-pwr_bar.png
+  artifactKey: Guid(1ccaecf733c0807459973dacc078163e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/neon-pwr_bar.png using Guid(1ccaecf733c0807459973dacc078163e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c761cd4aa824266c481f31a9521e64d') in 0.035287 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 22.692413 seconds.
+  path: Assets/Sprites/neon-pwr_bar.png
+  artifactKey: Guid(1ccaecf733c0807459973dacc078163e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/neon-pwr_bar.png using Guid(1ccaecf733c0807459973dacc078163e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '290c3f270b2a5aacb9c8a173871571a0') in 0.020963 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 564.995936 seconds.
   path: Assets/Sprites/neon-carrom.png
   artifactKey: Guid(ac7af18d6006f8a49948a4c790365a13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/neon-carrom.png using Guid(ac7af18d6006f8a49948a4c790365a13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56b8309146545be35e9e32c3e34424fa') in 2.902654 seconds 
+Start importing Assets/Sprites/neon-carrom.png using Guid(ac7af18d6006f8a49948a4c790365a13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1e119961e78f0d36bb13da1ccac657e') in 1.876863 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 173.566133 seconds.
+  path: Assets/Sprites/neon_blue.png
+  artifactKey: Guid(6e44a212a1fb9f64696913b0dfc881d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/neon_blue.png using Guid(6e44a212a1fb9f64696913b0dfc881d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16e2a184f03e1870ce153dc6159dfad3') in 0.219501 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.976919 seconds.
+  path: Assets/Prefabs/Blue.prefab
+  artifactKey: Guid(47b6e7b0e8b15d2458c972f7b97ce0c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Blue.prefab using Guid(47b6e7b0e8b15d2458c972f7b97ce0c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f47738fd497790a235b159bc93d0d3f4') in 0.240851 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Prefabs/Striker.prefab
+  artifactKey: Guid(a25ae04151b584541bede5d3c2fbeeb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Striker.prefab using Guid(a25ae04151b584541bede5d3c2fbeeb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f201112639f57a9513b5eb3848f2de0c') in 0.547759 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 12.672488 seconds.
+  path: Assets/Sprites/neon_blue.png
+  artifactKey: Guid(6e44a212a1fb9f64696913b0dfc881d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/neon_blue.png using Guid(6e44a212a1fb9f64696913b0dfc881d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00dc57f3e1b9a64cc2f84239491ce4eb') in 0.064013 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.967094 seconds.
+  path: Assets/Prefabs/Blue.prefab
+  artifactKey: Guid(47b6e7b0e8b15d2458c972f7b97ce0c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Blue.prefab using Guid(47b6e7b0e8b15d2458c972f7b97ce0c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'acaabb69bd6080ad647571a77c76dfa9') in 0.039594 seconds 
