@@ -70,7 +70,7 @@ public class PlayerController : MonoBehaviour
             if (Input.GetMouseButton(0))
             {
                 power_spr.enabled = true;
-                m_vert += Input.GetAxis("Mouse Y");
+                //m_vert += Input.GetAxis("Mouse Y");
                 Vector3 maskTransform;
                 maskTransform = Vector2.zero;
                 //maskTransform.y = Mathf.Clamp(m_vert * 0.1f, -1f, 0f);

@@ -18,13 +18,14 @@ public class h0les : MonoBehaviour
 
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        print("OK");
-    }
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
         print("ok");
+        collision.gameObject.name += " Scored";
+        CoinScored(collision.transform);
+    }
+    void CoinScored(Transform coin)
+    {
+        coin.transform.position = Camera.main.WorldToScreenPoint(new Vector2(1, 0));
     }
 }

@@ -766,6 +766,8 @@ MonoBehaviour:
   - {fileID: 413895207}
   - {fileID: 1765320041}
   - {fileID: 67880609}
+  blue: []
+  orange: []
 --- !u!1 &624592036
 GameObject:
   m_ObjectHideFlags: 0
@@ -1147,8 +1149,8 @@ Canvas:
   m_GameObject: {fileID: 1373837451}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_RenderMode: 1
+  m_Camera: {fileID: 519420031}
   m_PlaneDistance: 100
   m_PixelPerfect: 1
   m_ReceivesEvents: 1
