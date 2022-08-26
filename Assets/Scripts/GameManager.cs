@@ -11,6 +11,8 @@ public class GameManager : MonoBehaviour
     public int chance;
 
     [SerializeField] List<Transform> h0le = new(4);
+    [SerializeField] List<Transform> blue = new(9);
+    [SerializeField] List<Transform> orange = new(9);
 
     // Start is called before the first frame update
     void Start()

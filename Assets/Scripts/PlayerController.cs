@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour
     public float strike_power;
 
     [SerializeField] InitGame ig;
+    private const float HorizontalBounds = 7.5f;
 
     // Start is called before the first frame update
     void Start()
@@ -49,14 +50,12 @@ public class PlayerController : MonoBehaviour
 
     void StrikerControl()
     {
+        
         if (st_count <= 0)
         {
-            st_count = 0;
-            m_hori += Input.GetAxis("Mouse X");
-            striker.x = Mathf.Clamp(m_hori, -7.5f, 7.5f);
-            aim_spr.enabled = false;
-            power_spr.enabled = false;
-            transform.localPosition = striker;
+            var newPos = transform.position;
+            newPos.x = Mathf.Clamp(Camera.main.ScreenToWorldPoint(Input.mousePosition).x, -HorizontalBounds, HorizontalBounds);
+            transform.position = newPos;
         }
         if (st_count == 1)
         {
@@ -73,10 +72,9 @@ public class PlayerController : MonoBehaviour
                 power_spr.enabled = true;
                 m_vert += Input.GetAxis("Mouse Y");
                 Vector3 maskTransform;
-                //power_spr.material.SetFloat("_Arc2", -m_vert);
-                //strike_power = RangeConvert(Mathf.Clamp(power_spr.material.GetFloat("_Arc2"), 0f, 360f));
                 maskTransform = Vector2.zero;
-                maskTransform.y = Mathf.Clamp(m_vert * 0.1f, -1f, 0f);
+                //maskTransform.y = Mathf.Clamp(m_vert * 0.1f, -1f, 0f);
+                maskTransform.y = Mathf.Clamp(Camera.main.ScreenToWorldPoint(Input.mousePosition).y, -1, 0);
                 msk_pwr.transform.localPosition = maskTransform;
                 strike_power = RangeConvert(maskTransform.y);
                 
