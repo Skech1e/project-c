@@ -15,7 +15,7 @@ public class InitGame : MonoBehaviour
     [SerializeField] List<Vector2Int> dark = new();
 
     GameManager manager;
-
+    public Transform[] j = new Transform[8], k = new Transform[8];
 
 
     // Start is called before the first frame update
@@ -63,12 +63,26 @@ public class InitGame : MonoBehaviour
         {
             for (int i = 0; i <= 8; i++)
             {
-                Instantiate(Light, grid.CellToWorld((Vector3Int)light[i]), Quaternion.identity);
-                Instantiate(Dark, grid.CellToWorld((Vector3Int)dark[i]), Quaternion.identity);
+                j[i] = Instantiate(Light, grid.CellToWorld((Vector3Int)light[i]), Quaternion.identity); 
+                k[i] = Instantiate(Dark, grid.CellToWorld((Vector3Int)dark[i]), Quaternion.identity);
             }
             Instantiate(Queen, grid.CellToWorld((Vector3Int)centre), Quaternion.identity);
 
             Instantiate(Striker, players[0].position, Quaternion.identity);
+        }
+    }
+
+    public void MaintainPos()
+    {
+        for(int i = 0; i < 8; i++)
+        {
+            var x = new dynamic[i];
+            var y = new dynamic[i];
+
+            x[i] = j[i];
+            y[i] = k[i];
+
+
         }
     }
 }
