@@ -12,22 +12,30 @@ public class BoardMechanics : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-       gameManager = FindObjectOfType<GameManager>();
+        gameManager = FindObjectOfType<GameManager>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (isTurnActive == true && sc.StrikerControl() == )
+        PlayTurn();
+    }
+
+    void PlayTurn()
+    {
+        if (isTurnActive == true)
         {
             sc.StrikerControl();
-            print(coin);
-            gameManager.chance++;
-            isTurnActive = sc.StrikerControl() == true ? !isTurnActive : isTurnActive;
+            //print(coin);            
+            if (sc.StrikerControl() == true)
+            {
+                TurnSwitch();
+                gameManager.chance++;
+            }
         }
         if (isTurnActive == false)
-            coin = "null";
-            
+            coin = "nul";
+
     }
 
     public void TurnSwitch()

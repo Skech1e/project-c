@@ -59,9 +59,9 @@
     <Compile Include="Assets\Scripts\H0les.cs" />
     <Compile Include="Assets\Scripts\Testing.cs" />
     <Compile Include="Assets\Scripts\InitBoard.cs" />
+    <Compile Include="Assets\Scripts\BoardMechanics.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\StrikerCode.cs" />
-    <Compile Include="Assets\Scripts\BoardMechanics.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
