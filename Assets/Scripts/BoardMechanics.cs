@@ -24,17 +24,15 @@ public class BoardMechanics : MonoBehaviour
     void PlayTurn()
     {
         if (isTurnActive == true)
-        {
-            sc.StrikerControl();
-            //print(coin);            
+        {                        
             if (sc.StrikerControl() == true)
             {
                 TurnSwitch();
                 gameManager.chance++;
             }
         }
-        if (isTurnActive == false)
-            coin = "nul";
+        if (isTurnActive == false) ;
+            
 
     }
 

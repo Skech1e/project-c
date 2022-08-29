@@ -88,7 +88,6 @@ public class StrikerCode : MonoBehaviour
                 power_spr.enabled = false;
                 rg_striker.AddRelativeForce(Vector2.up * strike_power, ForceMode2D.Impulse);
                 Invoke("ResetStrikerPos", 3f);
-                print("ok");
                 return true;
             }
         }
